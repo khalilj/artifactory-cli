@@ -17,7 +17,7 @@ class TokenCache:
         os.chmod(self.local_cache_file, 0o600)
     
     def retrieve_token(self):
-        if not os.path.exists(local_cache_file):
+        if not os.path.exists(self.local_cache_file):
             return ""
         
         with open(self.local_cache_file) as json_file:

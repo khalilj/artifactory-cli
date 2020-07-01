@@ -21,9 +21,12 @@ class ArtifactoryAdapter:
     def ping(self):
         url = self.base_url + '/system/ping'
         r = requests.get(url)
-        print(r.text)
+        logging.info(r.text)
 
     def versions(self, token):
         url = self.base_url + '/system/version'
-        r = requests.get(url)
-        logging.log(r.json)
+        r = requests.get(url, headers=self.get_auth_header(token))
+        logging.info(r.text)
+
+    def get_auth_header(self, token):
+        return {'Authorization': 'Bearer ' + token}

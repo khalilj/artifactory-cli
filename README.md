@@ -2,6 +2,9 @@
 CLI for [JFrog Artifactory](https://www.jfrog.com/confluence/display/RTF)
 
 ## Setup
+Run: **pip install git+https://github.com/khalilj/artifactory-cli.git**
+
+Then make yourself familiar with available cli options by running: **art --help**
 
 ## To do
 - Authenticate - **DONE**
@@ -13,4 +16,4 @@ CLI for [JFrog Artifactory](https://www.jfrog.com/confluence/display/RTF)
 - Delete User - **DONE**
 - Get Storage Info - **DONE**
 - Get server URL as env var or cli option - **DONE**
-- Update this readme :)
+- Update this readme :) - **DONE**

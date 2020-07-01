@@ -3,7 +3,7 @@ from setuptools import setup
 setup(
     name='Artifactory CLI',
     version='1.0',
-    py_modules=['art'],
+    packages=['artcli'],
     install_requires=[
         'Click',
         'requests'

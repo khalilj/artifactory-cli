@@ -1,9 +1,9 @@
 from setuptools import setup
 
 setup(
-    name='Artifactory CLI',
+    name='art',
     version='1.0',
-    packages=['artcli', 'art'],
+    packages=['artcli'],
     install_requires=[
         'Click',
         'requests'

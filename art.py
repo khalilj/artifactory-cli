@@ -14,3 +14,8 @@ def cli():
 def auth(user, passwd):
     """Authenticate using user/pass with Artifactory"""
     print(art_ad.auth(user, passwd))
+
+@cli.command()
+def ping():
+    """Ping the Artifactory server"""
+    art_ad.ping()
